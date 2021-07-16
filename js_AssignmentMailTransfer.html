@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .styleEmail{
+            margin: auto;
+            border: 2px solid black;
+            width: fit-content;
+        }
+        .h1{
+            color: red;
+        }
+        .fm{
+           width: auto;
+           margin: 10px;
+        }
+        .btn{
+           margin-left: 50px;
+           margin-bottom: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js_AssignmentMailTransfer.js"></script>
+</head>
+<body>
+    <div class="styleEmail">
+        <h1 class="h1"><center>Email Box</center></h1>
+    <form method="POST">
+        <input class="fm" type="email" id="toSend" placeholder="Enter Receiver's Email:"/><br>
+        <input class="fm" type="email" id="from" placeholder="Enter Your Email:"/><br>
+        <input class="fm" type="text" id="subject" placeholder="Enter subject:"/><br>
+        <input class="fm" type="text" id="body" placeholder="Enter Your Message:"/><br>
+     <input type="button" value="Send" class="btn" onclick="sendEmail()"/>
+    </form>
+</div>
+    
+</body>
+</html>
